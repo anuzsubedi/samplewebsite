@@ -1,0 +1,292 @@
+/*Changing teh margin and font of entire webpage*/
+*{
+	margin:0px;
+	font-family: "product sans";
+}
+/*Changing background color using gradient*/
+.mainbg{
+  	background-color: #001d42;
+	background-image: linear-gradient(147deg, #1c334a 0%, #003780 74%)fixed center 
+	position:static;
+	top:0;
+}
+/*The z index brings the nav bar ahead of everything in the zaxis*/
+.mainnav{
+	z-index:1;
+	position:sticky;
+	padding:50px;
+	top:0;
+	background-color: #001d42;
+	background-image: linear-gradient(147deg, #1c334a 0%, #003780 74%)fixed center ;	
+}
+/*styling for logo */
+.logo{
+	float:left;
+	padding-left:10px;
+	padding-top:1px;
+}
+.logo a{
+	color:white;
+	text-decoration: none;
+	display:inline-block;
+	font-size: 25px;
+}
+.logo a:hover{
+	color:lightgray;
+	font-size:30px;
+	transition: 0.6s ease;
+}
+/* applying the gradient for navbar as well*/
+.nav{
+	float:right;
+	text-decoration: none;
+	background-color: #001d42;
+	background-image: linear-gradient(147deg, #1c334a 0%, #003780 74%)fixed center ;
+}
+/*styling the elements of navbar*/
+ul .navigatiobar{
+	padding-right:20px;
+	padding-top:10px;
+}
+ul li {
+	display:inline-block;
+}
+ul li a{
+	text-align: center;
+	border:1px white;
+	padding:5px 13px 5px 13px;
+	margin-left:20px;
+	border-radius: 5px;
+	color:white;
+	font-size:20px;
+	text-decoration:none;
+}
+/*changng the color of element in navbar while hovering*/
+ul li a:hover{
+	background-color:white;
+	color:black;
+	transition: 0.6s ease;
+}
+/*Changing the color of active tab in navbar*/
+.active{
+	background-color:#ff9900;
+	color:white;
+}
+.oklogo{
+	float:right;
+	transform:scalex(-1);
+	height:500px;
+	width:auto;
+	filter:brightness(70%);
+}
+	.oklogo:hover{
+	float:right;
+	transform:scalex(-1);
+	height:480px;
+	width:auto;
+	filter:brightness(100%);
+	top:60%;
+	transition:0.6s ease;
+}
+.title{
+	color:white;
+	font-size:40px;
+}
+.subtitle{
+	color:white;
+	font-size:30px;
+	font-style:italic;
+	padding:10px 0px	;
+}
+.content{
+	color:white;
+	font-size:20px;
+}
+/*using row and column for the proper alignment of different divs*/
+.row{
+	display:flex;
+	flex-direction:row;
+}
+.column {
+  display: flex;  
+  flex-direction: column;
+  -webkit-flex-direction:column;
+  margin: 50px 0px 24px 10%;
+}
+a {
+	color:inherit;
+	text-decoration:inherit;
+}
+.bodycontent{
+	color:white;
+	width:350px;
+	padding:14px;
+	border-radius:5px;
+	background-color:#00214d;
+	margin-bottom: 30px;
+	font-size:20px;
+}
+.bodycontent:hover{
+	color:black;
+	padding:18px;
+	border-radius:6px;
+	background-color:white;
+	transition:ease 0.6s;
+	font-size:20px;
+}
+
+.bodycontent .bcheading{
+	opacity:100%;
+	display: block;
+	margin-bottom: 10px;
+  	padding:14px;
+  	border-bottom: 2px solid;
+  	font-weight: bold;
+  	font-size:30px;
+}
+
+.bodycontent.bcparagraph{
+	font-size:20px;
+	display:block;
+	margin-bottom:10px;
+	padding:14px;
+}
+/*Styling the footer*/
+footer{
+	position: static;
+	margin-top:10%;
+	padding-top:20px;
+  	left: 0;
+  	bottom: 0%;
+  	width: 100%;
+  	background-color:#000924;
+  	color: white;
+  	text-align: center;
+  	height:140px;
+}
+footer p{
+	padding-right:20px;
+	text-align:center;
+	vertical-align:center;
+}
+.footerimage{
+	height:30px;
+	align-items:center;
+}
+.buttonblog-main{
+	margin-top:10%;
+}
+.buttonblog{
+	padding:10px;
+	margin-left:10%;
+	background-color:white;
+	color:black;
+	margin-bottom: 10px;
+	width:100px;
+}
+.buttonblog:hover{
+	background-color:#00214d;
+	tranisition:0.6s ease;
+	color:white;
+}
+.blogcontent{
+	vertical-align:middle;
+	width:500px;
+	background-color:white;
+	border-style:solid #000033;
+	border-radius:5px;
+}
+#row1blog{
+	vertical-align:middle;
+    display:flex;
+    flex-direction:row;
+    margin-left:17%;
+    margin-bottom:40px;
+}
+#row2blog{
+	vertical-align:middle;
+    display:flex;
+    flex-direction:row;
+    margin-left:17%;
+    margin-bottom:40px;
+}
+
+
+#column1blog{
+	vertical-align:all;
+	margin-top:15%;
+    display:flex;
+    flex-direction:column;
+    margin-left:10%;
+}
+
+
+#column2blog{
+	vertical-align:middle;
+	height:auto;
+	margin-top:10%;
+	left-margin:20px;
+    display:flex;
+    flex-direction:column;
+    margin-left:10%;
+}
+#column3blog{
+	vertical-align:middle;
+	height:auto;
+	margin-top:10%;
+	left-margin:20px;
+    display:flex;
+}
+/*styling the form*/
+}
+form{
+	padding:10px;
+}
+form label{
+	color:white;
+	font-size:20px;
+}
+form label input{
+	padding:15px;
+}
+label{
+	margin-left:30px;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+input{
+	padding:10px;
+	height:25px;
+	margin-left:30px;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+.research1{
+	color:white;
+	font-size:18px;
+	width:500px;
+	text-align:justify;
+}
+.researchimg{
+	width:500px;
+	height:auto;
+}
+.research2{
+	color:white;
+	font-size:18px;
+	width:1020px;
+	text-align:justify;
+	align-content: center;
+}
+.slider {
+      width: 500px;
+      height: auto;
+      margin: 20px auto;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+ .sliderimage 
+    {
+      width: 200px;
+      height: auto;
+    }

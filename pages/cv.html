@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+ .footer{
+ 	margin-top:8px;
+ }
+ .footerimage{
+ 	margin-left:5px;
+ }
+ th, td{
+ 	padding:10px;
+ 	text-align:left;
+ }
+ th,td{
+ 	border-bottom:1px solid #ddd;
+ }
+ tr:hover{
+ 	background-color: #f5f5f5;
+ }
+ tr:nth-child(even){background-color: #f2f2f2;
+ }
+
+</style>
+<body class="mainbg">
+	<div class="mainnav">
+		<div class="logo">
+			<a href="../index.html">
+			the<span style="color:gray;font-variant:bold">untold</span>plots
+			</a>
+		</div>
+		<div class="navbar">
+			<ul class="nav">
+				<li><a href="../index.html"> Home </a> </li>
+				<li><a href="blog.html"> Blog </a> </li>
+				<li><a href="cv.html" class="active"> CV </a> </li>
+				<li><a href="research.html"> Research </a> </li>
+				<li><a href="contact.html"> Contact Us </a> </li>
+			</ul>
+		</div>
+	</div>	
+	<picture>
+		<img src="../images/manlogo.svg" class="oklogo">
+	</picture>
+	</div>
+		<div id="row1blog" style="margin-top:10%;margin-left:10%;margin-bottom:40px;">
+    	<div id="column1blog">
+            <!--for allowing changing of different tables on click of different buttons -->
+    		<button onclick="showtable1()" class="buttonblog" id="personal">Personal Details</button>
+    		<button onclick="showtable2()" class="buttonblog" id="student">Professional Details</button>
+    		<button onclick="showtable3()" class="buttonblog" id="social">Skills and Hobbies</button>
+    	</div>
+        <!-- internal javascript-->
+    	<script>
+    		function showtable1()
+				{
+					var element = document.getElementById('tpersonal').style.display="flex";
+					var element = document.getElementById('tprofessional').style.display="none";
+					var element = document.getElementById('thobbies').style.display="none";}
+
+			function showtable2()
+				{
+					var element = document.getElementById('tpersonal').style.display="none";
+					var element = document.getElementById('tprofessional').style.display="flex";
+					var element = document.getElementById('thobbies').style.display="none";}
+
+			function showtable3()
+				{
+					var element = document.getElementById('tpersonal').style.display="none";
+					var element = document.getElementById('tprofessional').style.display="none";
+					var element = document.getElementById('thobbies').style.display="flex";}
+
+    	</script>
+    	<div id="column2blog">
+            <!-- first table starts here-->
+    		<table id="tpersonal" class="blogcontent" style="padding:20px;font-size:19px;text-align:justify;vertical-align:middle;padding-right:0px;display:flex;">
+    			<tr>
+    				<th colspan="2" align="center">Personal Details </th>
+    			</tr>
+    			<tr>
+    				<td> Name </td>
+    				<td> Anuz Subedi </td>
+    			</tr>
+    			<tr>
+    				<td> Date of Birth</td>
+    				<td> 2002-10-30</td>
+    			</tr>
+    			<tr>
+    				<td> Address</td>
+    				<td> Lokanthali-2, Bhaktapur</td>
+    			</tr>
+    			
+    			<tr>
+    				<td> Marital Status</td>
+    				<td> Unmarried</td>
+    			</tr>
+    			<tr>
+    				<td> Email</td>
+    				<td> an4z@outlook.com</td>
+    			</tr>
+    			<tr>
+    				<td> Contact Number</td>
+    				<td> +977 9840277725</td>
+    			</tr>
+    		</table>
+            <!--First table ends here -->
+            <!--Second table starts here -->
+    		<table id="tprofessional" class="blogcontent" style="padding:20px;font-size:19px;text-align:justify;vertical-align:middle;padding-right:0px;display:none;">
+    			<tr>
+    				<th colspan="2" align="center">Professional Details </th>
+    			</tr>
+    			<tr>
+    				<td> Education Level </td>
+    				<td> Highschool </td>
+    			</tr>
+    			<tr>
+    				<td> Current Education</td>
+    				<td> Undergraduate</td>
+    			</tr>
+    			<tr>
+    				<td> Employment Status</td>
+    				<td> Currently Unemployed</td>
+    			</tr>
+    			
+    			<tr>
+    				<td ><b> Schools<b></td>
+    				<td> 
+    					<tr>
+    						<td> TEBS </td>
+    						<td> Nursery-Grade10</td>
+    					</tr>
+    					<tr>
+    						<td> Trinity Int'l College </td>
+    						<td> Highschool </td>
+    					</tr>
+    					<tr>
+    						<td> Islington College </td>
+    						<td> Current </td>
+    					</tr>
+    				</td>
+    			</tr>
+    		</table>
+            <!-- 2nd table ends and 3rd table starts here-->
+    		<table id="thobbies" class="blogcontent" style="padding:20px;font-size:19px;text-align:justify;vertical-align:middle;padding-right:0px;display:none;">
+    			<tr>
+    				<th colspan="2" align="center">Skills and Hobbies </th>
+    			</tr>
+    			<tr>
+    				<th> Language</th>
+    				<th> Proficiency </th>
+    			</tr>
+    			<tr>
+    				<td> QBasic</td>
+    				<td> Expert</td>
+    			</tr>
+    			<tr>
+    				<td> Visual Basic</td>
+    				<td> Intermidiate</td>
+    			</tr>
+    			
+    			<tr>
+    				<td>MySql</td>
+    				<td> Beginner</td>
+    			</tr>
+    			<tr>
+    				<td> Java</td>
+    				<td> Beginner</td>
+    			</tr>
+    			<tr>
+    				<td> HTML/CSS</td>
+    				<td> Beginner</td>
+    			</tr>
+    			<tr>
+    				<th colspan="2"> Hobbies</th>
+    			</tr>
+    			<tr>
+    				<td colspan="2"> Video Games</td>
+    			</tr>
+    			<tr>
+    				<td colspan="2"> Music</td>
+    			</tr>
+    			<tr>
+    				<td colspan="2"> Reading Fantasy Novels</td>
+    			</tr>
+    		</table>	
+            <!--3rd table ends here -->			
+      	</div>
+
+	</div>
+
+					
+	</body>
+<footer>
+	<p class="footer" style="text-align: right; align-items: right;">
+	<a href="https://www.facebook.com/theanuzsubedi"><img src="../images/facebooklogo.png" class="footerimage"></a>
+	<a href="https://www.twitter.com/theanuzsubedi"><img src="../images/twitterlogo.png" class="footerimage"></a>
+	<a href="https://www.reddit.com/user/theanuzsubedi"><img src="../images/redditlogo.png" class="footerimage"></a>
+	<a href="https://www.instagram.com/theanuzsubedi"><img src="../images/instalogo.png" class="footerimage"></a>
+	<a href="mailto:anuzsubedi@hotmail.com"><img src="../images/emailogo.png" class="footerimage"></a>
+<p> <span style="font-size:15px;vertical-align:baseline;">&copy</span> 2019-20, Anuz Subedi, or theuntoldplots.</p>
+<p> All rights reserved. </p>
+</footer>
+
+</html>

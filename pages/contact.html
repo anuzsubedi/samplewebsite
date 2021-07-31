@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+ .footer{
+ 	margin-top:8px;
+ }
+ .footerimage{
+ 	margin-left:5px;
+ }
+</style>
+<!--validating the form -->
+<script>
+	function validateForm(){
+		var fname = document.forms["messageForm"]["FName"].value;
+		var lname = document.forms["messageForm"]["LName"].value;
+		var email = document.forms["messageForm"]["Email"].value;
+		var message = document.forms["messageForm"]["message"].value;
+		if (fname == "" || lname == "" || message == ""){
+					alert("Empty fields found. Please fill the form.");
+				}
+				else {
+					alert("Thank you for the feedback.");
+
+		} 
+	}
+</script>
+<body class="mainbg">
+	<div class="mainnav">
+		<div class="logo">
+			<a href="../index.html">
+			the<span style="color:gray;font-variant:bold">untold</span>plots
+			</a>
+		</div>
+		<!--Navbar of the webpage -->
+		<div class="navbar">
+			<ul class="nav">
+				<li><a href="../index.html"> Home </a> </li>
+				<li><a href="blog.html"> Blog </a> </li>
+				<li><a href="cv.html"> CV </a> </li>
+				<li><a href="research.html"> Research </a> </li>
+				<li><a href="contact.html" class="active"> Contact Us </a> </li>
+			</ul>
+		</div>
+	</div>	
+	<picture>
+		<img src="../images/manlogo.svg" class="oklogo">
+	</picture>
+	</div>
+
+
+<div class="column"style="">
+	<!-- form for entering messages-->
+	<form name="messageForm" onsubmit="validateForm()">
+			<div class="row">
+				<div class="col-2">
+		 				<label>First Name</label>
+						<input type="text" name="FName" class="text" placeholder="Ram">
+				</div>
+				<div class="col-2">
+					<label>Last Name</label>
+					<input type="text" name="LName" class="text" placeholder="Kusunda">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<label>Email Address</label>
+					<input type="text" name="Email" class="text" placeholder="ram.kusunda@email.com" style="margin-top:10px;width:250px;">
+				</div>
+				<div class="col-2">
+					<label>Telephone</label>
+					<input type="text" name="Contnum" class="text" placeholder="+977 9840404040 (Optional Field)"style="margin-top:10px;width:250px;">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<label>Your Message</label><br>
+					<textarea name="message"placeholder="Write your message here..." style="height:100px;width:300px;padding:10px;margin-left:30px;margin-top:10px;"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<input type="submit" name="" value="Submit" style="padding:10px;height:50px;margin-left:30px;margin-bottom:30px;margin-top:30px;">
+					</div>
+				</div>
+			</form>
+
+</div>
+
+	</body>
+<footer>
+	<div>
+	<p class="footer" style="text-align: right; align-items: right;">
+	<a href="https://www.facebook.com/theanuzsubedi"><img src="../images/facebooklogo.png" class="footerimage"></a>
+	<a href="https://www.twitter.com/theanuzsubedi"><img src="../images/twitterlogo.png" class="footerimage"></a>
+	<a href="https://www.reddit.com/user/theanuzsubedi"><img src="../images/redditlogo.png" class="footerimage"></a>
+	<a href="https://www.instagram.com/theanuzsubedi"><img src="../images/instalogo.png" class="footerimage"></a>
+	<a href="mailto:anuzsubedi@hotmail.com"><img src="../images/emailogo.png" class="footerimage"></a>
+</p>
+<p> <span style="font-size:15px;vertical-align:baseline;">&copy</span> 2019-20, Anuz Subedi, or theuntoldplots.</p>
+<p> All rights reserved. </p>
+</div>
+</footer>
+
+</html>

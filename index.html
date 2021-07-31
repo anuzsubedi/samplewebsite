@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+<!--linking to external css -->	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<!-- intenal css-->
+<style>
+ .footer{
+ 	margin-top:8px;
+ }
+ .footerimage{
+ 	margin-left:5px;
+ }
+</style>
+</script>
+<body class="mainbg">
+	<div class="mainnav">
+		<!-- logo-->
+		<div class="logo">
+			<a href="index.html">
+			the<span style="color:gray;font-variant:bold">untold</span>plots
+			</a>
+		</div>
+		<!--navigation bar -->
+		<nav class="navbar">
+			<ul class="nav">
+				<li><a href="index.html" class="active"> Home </a> </li>
+				<li><a href="pages/blog.html"> Blog </a> </li>
+				<li><a href="pages/cv.html"> CV </a> </li>
+				<li><a href="pages/research.html"> Research </a> </li>
+				<li><a href="pages/contact.html"> Contact Us </a> </li>
+			</ul>
+		</nav>
+	</div>	
+	<picture>
+		<div class="slider" style="float:right;margin-right:70px;">
+
+    	<div id="img">
+      	<img src="images/2.svg" class="sliderimage">
+    </div>
+
+  </div>
+
+	</picture>
+	</div>
+<!--first division referencing to the blog page -->
+<div class="column"style="">
+	<a href="pages/blog.html" style="all:none">
+		<div class="bodycontent">
+      		<p class="bcheading">Our Blog</p>
+      		<p style='text-align: justify;' class="bcparagraph">
+      		 		We have recently published an article related to imapact of technology. Click here to read the article.
+      		</p>
+  		</div>
+  	</a>	
+</div>
+<!--second division referencing to the cv page -->
+<div class="column"style="margin-left:12%;margin-top:0px">
+	<a href="pages/CV.html" style="all:none">
+		<div class="bodycontent">
+      		<p class="bcheading">Curriculum Vitae</p>
+      		<p style='text-align: justify;' class="bcparagraph">
+      		 	Click here to know more about my professional and personal career.
+      		</p>
+  		</div>
+  	</a>	
+</div>
+<!-- third division referencing to the research pge-->
+
+<div class="column"style="margin-top:0px">
+	<a href="pages/research.html" style="all:none">
+		<div class="bodycontent">
+      		<p class="bcheading">Research</p>
+      		<p style='text-align: justify;' class="bcparagraph">
+      		 	There are some elements of this website which are inspired by other websites and UI designs. Click here to compare this website to the reference sites.
+      		</p>
+  		</div>
+  	</a>	
+</div>
+
+	</body>
+	<!-- footer-->
+<footer>
+	<p class="footer" style="text-align: right; align-items: right;">
+	<a href="https://www.facebook.com/theanuzsubedi"><img src="images/facebooklogo.png" class="footerimage"></a>
+	<a href="https://www.twitter.com/theanuzsubedi"><img src="images/twitterlogo.png" class="footerimage"></a>
+	<a href="https://www.reddit.com/user/theanuzsubedi"><img src="images/redditlogo.png" class="footerimage"></a>
+	<a href="https://www.instagram.com/theanuzsubedi"><img src="images/instalogo.png" class="footerimage"></a>
+	<a href="mailto:anuzsubedi@hotmail.com"><img src="images/emailogo.png" class="footerimage"></a>
+<p> <span style="font-size:15px;vertical-align:baseline;">&copy</span> 2019-20, Anuz Subedi, or theuntoldplots.</p>
+<p> All rights reserved. </p>
+</footer>
+<script>
+	 var images = ['images/1.svg', 'images/2.svg', 'images/3.svg'];
+
+    var x = 0;
+
+    var imgs = document.getElementById('img');
+
+    setInterval(slider, 3000);
+
+
+    function slider() {
+
+      if (x < images.length) {
+        x = x + 1;
+      } else {
+        x = 1;
+      }
+
+
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+
+    }
+</script>
+
+</html>
